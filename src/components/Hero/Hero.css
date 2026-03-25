@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=JetBrains+Mono:wght@300;400&display=swap');
+
+.hero-wrap {
+  font-family: 'JetBrains Mono', monospace;
+  background: #0a0a0a;
+  color: #e8e8e2;
+  min-height: 100vh;
+  padding: 120px 56px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  gap: 48px;
+  margin-bottom: 80px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.section-label {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: #444;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.hero-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(48px, 8vw, 72px);
+  font-weight: 300;
+  line-height: 1;
+  color: #f0ece4;
+  margin: 0 0 12px;
+  letter-spacing: -1px;
+}
+
+.hero-name span {
+  color: #c9a84c;
+}
+
+.hero-sub {
+  font-size: clamp(10px, 2vw, 12px);
+  color: #666;
+  letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-sub .dot {
+  width: 4px;
+  height: 4px;
+  background: #c9a84c;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.hero-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 13px;
+  background: #c9a84c;
+  margin-left: 4px;
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero-avatar {
+  width: clamp(280px, 40vw, 500px);
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  border: 1px solid #444;
+  color: #e8e8e2;
+  background: transparent;
+  padding: 10px 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  border-color: #c9a84c;
+  color: #c9a84c;
+}
+
+.btn-solid {
+  border: 1px solid #c9a84c;
+  color: #0a0a0a;
+  background: #c9a84c;
+  padding: 10px 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-solid:hover {
+  background: #d4b86a;
+  border-color: #d4b86a;
+}
+
+.hero-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.hero-link {
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.hero-link:hover {
+  color: #c9a84c;
+  border-bottom-color: #c9a84c;
+}
+
+.hero-status {
+  font-size: 10px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  background: #4caf50;
+  border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  .hero-wrap {
+    padding: 100px 24px 60px;
+  }
+
+  .hero-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+    gap: 32px;
+  }
+
+  .hero-avatar {
+    order: -1;
+    width: clamp(240px, 80vw, 400px);
+    aspect-ratio: 4/3;
+  }
+
+  .hero-bottom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-wrap {
+    padding: 80px 16px 50px;
+  }
+
+  .hero-top {
+    margin-bottom: 50px;
+    gap: 24px;
+  }
+
+  .hero-avatar {
+    width: clamp(200px, 85vw, 320px);
+    aspect-ratio: 4/3;
+  }
+
+  .hero-btns {
+    width: 100%;
+  }
+
+  .btn-solid,
+  .btn-outline {
+    flex: 1;
+    min-width: 120px;
+  }
+}
