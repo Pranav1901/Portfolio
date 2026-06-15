@@ -61,7 +61,7 @@ const Hero = () => {
               </a>
               <a
                 className="hero-link"
-                href="https://drive.google.com/file/d/1jsuiXNl_F3WF2gpf_EcydFq1vTSZz3qJ/view?usp=sharing"
+                href="https://drive.google.com/file/d/1vDJba499MkEwMnv3NCagwl7AQQkL0Ypt/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
