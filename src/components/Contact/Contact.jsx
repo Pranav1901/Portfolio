@@ -26,7 +26,7 @@ const Contact = () => {
             <div className="ct-link-icon">LI</div>
             <span>LinkedIn</span>
           </a>
-          <a className="ct-link" href="https://drive.google.com/file/d/1jsuiXNl_F3WF2gpf_EcydFq1vTSZz3qJ/view?usp=sharing">
+          <a className="ct-link" href="https://drive.google.com/file/d/1vDJba499MkEwMnv3NCagwl7AQQkL0Ypt/view?usp=sharing">
             <div className="ct-link-icon">CV</div>
             <span>Resume</span>
           </a>
